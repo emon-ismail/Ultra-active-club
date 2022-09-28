@@ -1,11 +1,12 @@
 
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+ import 'bootstrap/dist/css/bootstrap.min.css';
+import Club from './components/club/Club';
 
 function App() {
   return (
     <div className="App">
-     <button className="btn btn-success"> hiiiii</button>
+<Club></Club>
     </div>
   );
 }
