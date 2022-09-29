@@ -1,6 +1,8 @@
 import React from 'react';
 import './About.css'
 
+
+
 const About = ({about}) => {
     let time =0;
     
@@ -11,7 +13,7 @@ const About = ({about}) => {
     return (
         <div className='cart-contain'>
         <div className='user-info'>
-            <img src="" alt="" />
+        <img className='img' src="./images/fuu.jpeg" alt="" />
             <div>
             <h4>Ismail Emon</h4>
             <small>Chittagong,Bangladesh</small>

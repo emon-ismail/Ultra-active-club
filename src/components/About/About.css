@@ -11,7 +11,7 @@
     margin: 50px 0;
     border: 1px solid;
     border-radius: 10px;
-    background-color: rgb(235, 218, 187);
+    background-color: rgb(248, 244, 230);
 }
 .user-details div{
     margin: 10px;
@@ -22,7 +22,7 @@
     margin: 20px 0;
     border: 1px solid ;
     border-radius: 10px;
-    background-color: rgb(235, 218, 187);
+    background-color: rgb(255, 255, 255);
 }
 .break-time-contain button{
     border-radius: 20px;
@@ -33,7 +33,7 @@
     background-color: orange;
 }
 .time{
-    background-color: rgb(235, 218, 187); 
+    background-color: rgb(252, 247, 236); 
     padding-left: 30px;
     border: 1px solid ;
     border-radius: 10px;
@@ -50,4 +50,7 @@
 }
 .user{
     display: flex;
+}
+.img{
+    width: 50px;
 }
