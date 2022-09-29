@@ -12,11 +12,12 @@
 }
 .instrument-contain{
     margin-left: 20px;
-    background-color: rgb(250, 203, 115);
+    background-color: rgb(225, 187, 187);
 }
 .header{
     background-color: beige;
     padding: 5px;
     border-radius: 20px;
     margin-bottom: 25px;
+    box-shadow: 10px 10px 40px gray;
 }

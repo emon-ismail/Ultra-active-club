@@ -12,6 +12,7 @@
     border: 1px solid #95A0A7;
     border-radius: 8px;
     position: relative;
+    box-shadow: 10px 10px 40px gray;
 }
 .button{
     margin-top: 10px;
@@ -19,12 +20,19 @@
     height: 48px;
    
     border: none;
-    background-color: rgba(255, 224, 179, 1);
+    background-color: rgb(35, 35, 33);
     position: absolute;
     bottom: 0px;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 20px;
+
+    
+}
+.button p{
+    margin-bottom: 5px;
+    color: white;
 }
 .item-info p{
   margin-top: -10px;

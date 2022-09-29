@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './About.css'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -9,11 +9,20 @@ const About = ({about}) => {
     let time =0;
     
     for(const instrument of about){
-          time=parseInt(time+instrument.time);
-          const all=parseInt(time)
+          time=(time+instrument.time);
           
     }
-    const diffToast= () => toast(" Congratulations!! Yes You done it!",{position:"top-center"});
+    const diffToast= () => toast.success(" Congratulations!! Yes You done it!",{position:"bottom-center"});
+
+    const [breaktime,setBreaktime]=useState("");
+
+    const HandleTime = (props)=>{
+         console.log(props)
+         setBreaktime(props);
+    }
+    localStorage.setItem('breakTime',breaktime);
+
+
 
     return (
         <div className='cart-contain'>
@@ -42,11 +51,11 @@ const About = ({about}) => {
 
         <h4>Add A Break</h4>
         <div className='break-time-contain'>
-           <div><button><p>10s</p></button></div>
-           <div><button><p>20s</p></button></div>
-           <div><button><p>30s</p></button></div>
-           <div><button><p>40s</p></button></div>
-           <div><button><p>50s</p></button></div>
+           <div onClick={()=>HandleTime(10)}><button><p>10s</p></button></div>
+           <div onClick={()=>HandleTime(20)}><button><p>20s</p></button></div>
+           <div onClick={()=>HandleTime(30)}><button><p>30s</p></button></div>
+           <div onClick={()=>HandleTime(40)}><button><p>40s</p></button></div>
+           <div onClick={()=>HandleTime(50)}><button><p>50s</p></button></div>
         </div>
     
     <h4>Exercise Details</h4>
@@ -54,7 +63,7 @@ const About = ({about}) => {
         <p>Exercise time    {time}s</p>
      </div>
      <div className='time'>
-        <p>Break time    </p>
+        <p>Break time {breaktime}   </p>
      </div>
        
      <button  onClick={diffToast}   id='btn'>

@@ -11,10 +11,12 @@
     margin: 50px 0;
     border: 1px solid;
     border-radius: 10px;
-    background-color: rgb(248, 244, 230);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 10px;
 }
 .user-details div{
     margin: 10px;
+    
 }
 .break-time-contain{
     display: flex;
@@ -23,27 +25,31 @@
     border: 1px solid ;
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
+    box-shadow: 5px 10px;
 }
 .break-time-contain button{
     border-radius: 20px;
     border: none;
     margin: 10px;
+    
 }
 .break-time-contain button:hover{
     background-color: orange;
 }
 .time{
-    background-color: rgb(252, 247, 236); 
+    background-color: rgb(255, 255, 255); 
     padding-left: 30px;
     border: 1px solid ;
     border-radius: 10px;
     margin-top: 10px;
+    box-shadow: 5px 5px;
 }
 #btn{
     width: 100%;
     margin: 20px 0;
     border: none;
     border-radius: 10px;
+    box-shadow: 5px 10px;
 }
 #btn:hover{
     background-color: orange;

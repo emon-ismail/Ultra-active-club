@@ -14,7 +14,7 @@ const Item = (props) => {
         <p>Time required : {time}s</p>
         <div>
         <button onClick={()=>props.handleAddToCArd(props.instrument)}  className='button'>
-          <p>Add to Card</p>
+          <p >Add to Card</p>
         
           </button>
         </div>
