@@ -30,7 +30,7 @@ const  get=localStorage.getItem('breakTime')
         <div className='user-info'>
         <img className='img' src="./images/fuu.jpeg" alt="" />
             <div>
-            <h4>Ismail Emon</h4>
+            <h4>Md. Ismail Emon</h4>
             <small>Chittagong,Bangladesh</small>
             </div>
             <div className='user-details'>
