@@ -19,9 +19,10 @@ const About = ({about}) => {
     const HandleTime = (props)=>{
          console.log(props)
          setBreaktime(props);
+         localStorage.setItem('breakTime',props);
     }
-    localStorage.setItem('breakTime',breaktime);
-
+   
+const  get=localStorage.getItem('breakTime')
 
 
     return (
@@ -63,7 +64,7 @@ const About = ({about}) => {
         <p>Exercise time    {time}s</p>
      </div>
      <div className='time'>
-        <p>Break time {breaktime}   </p>
+        <p>Break time {get}   </p>
      </div>
        
      <button  onClick={diffToast}   id='btn'>
