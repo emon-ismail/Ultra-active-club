@@ -1,7 +1,8 @@
 
 import './App.css';
  import 'bootstrap/dist/css/bootstrap.min.css';
-import Club from './components/club/Club';
+
+import Club from './components/Club/Club';
 
 function App() {
   return (
