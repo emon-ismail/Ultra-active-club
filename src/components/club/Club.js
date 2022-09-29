@@ -38,6 +38,7 @@ const Club = () => {
                 
                 instruments.map(instrument=><Item 
                      key={instrument.id}
+                    
                     instrument={instrument}
                 
                      handleAddToCArd ={handleAddToCArd}
@@ -50,7 +51,7 @@ const Club = () => {
         
 
         <div className='instrument-contain'>
-            {/* <Cart cart={cart}></Cart> */}
+            
             <About about={about}></About>
         </div>
         
