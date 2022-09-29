@@ -30,8 +30,9 @@ const Club = () => {
         <div className='main'>
             
             <div className="">
-             <h2>Emon's Gym Center</h2>
-             <h5>Choose today's done</h5>
+             <div className='header'>
+                <h2>Emon's Gym Center</h2>
+             <h5>Choose today's done</h5></div>
             <div className='instrument'>
             {
                 

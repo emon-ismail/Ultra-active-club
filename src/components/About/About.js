@@ -1,5 +1,7 @@
 import React from 'react';
 import './About.css'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -7,9 +9,12 @@ const About = ({about}) => {
     let time =0;
     
     for(const instrument of about){
-          time=time+instrument.time;
+          time=parseInt(time+instrument.time);
+          const all=parseInt(time)
           
     }
+    const diffToast= () => toast(" Congratulations!! Yes You done it!",{position:"top-center"});
+
     return (
         <div className='cart-contain'>
         <div className='user-info'>
@@ -52,9 +57,10 @@ const About = ({about}) => {
         <p>Break time    </p>
      </div>
        
-     <button id='btn'>
+     <button  onClick={diffToast}   id='btn'>
           <p>Activity Completed</p>
      </button>
+     <ToastContainer />
         
 
         
